@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterShopTypeCell" id="Wbb-CI-p7r" customClass="FilterShopTypeCell" customModule="TokopediaAssignment">
+            <rect key="frame" x="0.0" y="0.0" width="307" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="307" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcW-ps-5VS">
+                        <rect key="frame" x="12" y="12" width="283" height="51"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4K-0A-TIV">
+                                <rect key="frame" x="10" y="6" width="229" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a5-3x-OzB">
+                                <rect key="frame" x="249" y="0.0" width="34" height="51"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="Yu4-mS-plg"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="baseline_clear_black_24pt"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2a5-3x-OzB" firstAttribute="leading" secondItem="w4K-0A-TIV" secondAttribute="trailing" constant="10" id="2Jc-It-aae"/>
+                            <constraint firstAttribute="bottom" secondItem="w4K-0A-TIV" secondAttribute="bottom" constant="6" id="54U-JC-4Da"/>
+                            <constraint firstAttribute="trailing" secondItem="2a5-3x-OzB" secondAttribute="trailing" id="BGh-nf-HZY"/>
+                            <constraint firstItem="w4K-0A-TIV" firstAttribute="top" secondItem="LcW-ps-5VS" secondAttribute="top" constant="6" id="GMZ-py-Rd3"/>
+                            <constraint firstItem="w4K-0A-TIV" firstAttribute="leading" secondItem="LcW-ps-5VS" secondAttribute="leading" constant="10" id="T0P-oJ-EFp"/>
+                            <constraint firstItem="2a5-3x-OzB" firstAttribute="centerY" secondItem="LcW-ps-5VS" secondAttribute="centerY" id="cjN-0U-dZf"/>
+                            <constraint firstItem="2a5-3x-OzB" firstAttribute="top" secondItem="LcW-ps-5VS" secondAttribute="top" id="dPD-Xx-ihs"/>
+                            <constraint firstAttribute="bottom" secondItem="2a5-3x-OzB" secondAttribute="bottom" id="qCn-Br-FYW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="LcW-ps-5VS" firstAttribute="leading" secondItem="Wbb-CI-p7r" secondAttribute="leading" constant="12" id="APT-hs-nv6"/>
+                <constraint firstAttribute="bottom" secondItem="LcW-ps-5VS" secondAttribute="bottom" constant="12" id="HXt-Dl-zqT"/>
+                <constraint firstAttribute="trailing" secondItem="LcW-ps-5VS" secondAttribute="trailing" constant="12" id="Zlu-Z0-Aq9"/>
+                <constraint firstItem="LcW-ps-5VS" firstAttribute="top" secondItem="Wbb-CI-p7r" secondAttribute="top" constant="12" id="kT4-IX-foD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Xw7-wa-fKC"/>
+            <size key="customSize" width="307" height="75"/>
+            <connections>
+                <outlet property="btnRemoveShopType" destination="2a5-3x-OzB" id="KfQ-cz-HxO"/>
+                <outlet property="constraintBtnRemoveWidth" destination="Yu4-mS-plg" id="mPk-LG-f5y"/>
+                <outlet property="lblShopType" destination="w4K-0A-TIV" id="PbX-Og-qsU"/>
+                <outlet property="viewShopType" destination="LcW-ps-5VS" id="8Aw-Ib-k9y"/>
+            </connections>
+            <point key="canvasLocation" x="164.5" y="62.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="baseline_clear_black_24pt" width="24" height="24"/>
+    </resources>
+</document>
