@@ -30,11 +30,7 @@ class FilterShopTypeCell : UICollectionViewCell {
     override func awakeFromNib() {
         
         super.awakeFromNib()
-        
-        // initial setup
-//        self.viewShopType.layer.masksToBounds = false
-//        self.btnRemoveShopType.layer.masksToBounds = true
-        
+                
         constraintBtnRemoveWidth.constant = self.viewShopType.frame.size.height
     }
     

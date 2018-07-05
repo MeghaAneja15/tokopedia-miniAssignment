@@ -52,7 +52,7 @@ extension ProductViewModal{
                     self.totalItems = /(response.header?.total_data)
                     self.arrayProductDetail.accept(self.arrayProductDetail.value + (response.data ?? []) )
                     
-                case .failure:break
+                case .failure:
                 UIApplication.shared.keyWindow?.rootViewController?.makeToast(text:  ConstantStrings.somethingWentWrong.rawValue, type: .error)
                     
                 }
