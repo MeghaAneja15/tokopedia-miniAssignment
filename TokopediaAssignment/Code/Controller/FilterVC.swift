@@ -32,11 +32,7 @@ class FilterVC: BaseController {
     @IBOutlet weak var rangeSlider: RangeSeekSlider!
     @IBOutlet weak var lblMinPrice: UILabel!
     @IBOutlet weak var lblMaxPrice: UILabel!
-    @IBOutlet weak var collection: UICollectionView!{
-        didSet{
-            collection.registerXIB(R.reuseIdentifier.filterShopTypeCell.identifier)
-        }
-    }
+    @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var switchWholesale: UISwitch!
     @IBOutlet weak var constraintCollectionviewHeight: NSLayoutConstraint!
     
@@ -51,11 +47,10 @@ class FilterVC: BaseController {
         super.viewDidLoad()
         initialSetup()
     }
-}
 
 
+//MARK: -
 //MARK: - UICollectionView DataSource, Delegate
-extension FilterVC {
     
     func configureCollectionView(){
         
@@ -74,14 +69,14 @@ extension FilterVC {
             }.disposed(by: disposableBag)
         
     }
-}
-
+    
+//MARK: -
 //MARK: - Custom Methods
-extension FilterVC {
-    
-    
+
     func initialSetup() {
         self.viewModal.filterModel = UserSingleton.shared.setFilters
+        self.viewModal.arrayShopFilter.accept((UserSingleton.shared.setFilters?.shopFilter) ?? [])
+
         bindingButtons()
         setupCollectionview()
         configureCollectionView()
@@ -99,7 +94,6 @@ extension FilterVC {
         
         self.constraintCollectionviewHeight.constant = /(self.viewModal.arrayShopFilter.value.count) == 0 ? 0.0 : Height.filterCollectionview
         
-       // self.collection.reloadData()
     }
     
     ///Sretting Range Seek Slider on filter
@@ -120,15 +114,13 @@ extension FilterVC {
     ///Setting Collection View
     func setupCollectionview() {
         
-        collection.collectionViewLayout = self.collectionViewFlowLayout(minSpacing: 0.0, minItemSpacing: 0.0, scrollDirection: .horizontal, height:  self.collection.bounds.height - 16.0, width: ScreenSize.screenWidth/2 - 24.0)
+         collection.collectionViewLayout = self.collectionViewFlowLayout(height:  self.collection.bounds.height - 8.0, width: ScreenSize.screenWidth/2 - 12.0)
         
         
     }
     
-}
-
+//MARK:-
 //MARK:- Button Bindings
-extension FilterVC{
     
     func bindingButtons() {
         bindBtn(value: .Cancel)
@@ -139,8 +131,7 @@ extension FilterVC{
     
     func bindBtn(value : FilterBtnActions){
         
-        filterBtnOutlets[value.rawValue].rx.tap.subscribe(onNext:{ _ in
-            
+        filterBtnOutlets[value.rawValue].rx.tap.asDriver().drive(onNext: {
             switch value{
                 
             case .Cancel:
@@ -156,6 +147,7 @@ extension FilterVC{
             case .ShopType:
                 guard let vc = R.storyboard.main.shopFilterVC() else {return}
                 vc.delegate = self
+                vc.viewModal.arraySelectedShopFilter = self.viewModal.arrayShopFilter.value
                 self.present(vc)
                 
             case .Apply:
@@ -167,6 +159,7 @@ extension FilterVC{
                 
             }
         }).disposed(by: disposableBag)
+        
     }
     
     @IBAction func switchValueChanged(_ sender: Any) {
@@ -179,7 +172,8 @@ extension FilterVC{
 //MARK:- Delegates
 extension FilterVC : ChangeShopFilter {
     func changeShopFilterData(shopFilter: [ShopFilter]?) {
-        self.viewModal.arrayShopFilter.value = shopFilter ?? []
+        self.viewModal.arrayShopFilter.accept(shopFilter ?? [])
+        self.viewModal.filterModel?.shopFilter = shopFilter ?? []
         self.setFilterValues()
     }
     

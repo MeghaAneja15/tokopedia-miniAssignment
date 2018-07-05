@@ -9,7 +9,7 @@
 import UIKit
 
 class ProductsVC: BaseController {
-
+    
     //MARK: -
     //MARK: - OUTLETS
     @IBOutlet var collection: UICollectionView!
@@ -24,24 +24,21 @@ class ProductsVC: BaseController {
         super.viewDidLoad()
         initialSetup()
     }
-
-
-}
+    
 //MARK: -
 //MARK: - Custom Methods
-extension ProductsVC {
     
     func initialSetup(){
-                
+        
         configureCollectionView()
         buttonBinding()
         self.viewModal.productSearchAPI()
-   
+        
     }
     
     func configureCollectionView(){
         
-        let layout = self.collectionViewFlowLayout(minSpacing: 1.0, minItemSpacing: 1.0, scrollDirection: .vertical, height: ScreenSize.screenHeight/2 - 16.0, width: ScreenSize.screenWidth/2 - 16.0)
+        let layout = self.collectionViewFlowLayout( height: ScreenSize.screenHeight/2 - 16.0, width: ScreenSize.screenWidth/2 - 16.0)
         
         collection.collectionViewLayout = layout
         
@@ -51,14 +48,13 @@ extension ProductsVC {
             self.viewModal.pagination(row: row)
             }.disposed(by: disposableBag)
     }
-   
+    
     func buttonBinding(){
         
-        btnFilter.rx.tap.subscribe(onNext:{ _ in
+        btnFilter.rx.tap.asDriver().drive(onNext: {
             guard let vc = R.storyboard.main.filterVC() else { return }
             vc.delegate = self
             self.present(vc)
-            
         }).disposed(by: disposableBag)
         
     }
@@ -66,11 +62,11 @@ extension ProductsVC {
 //MARK:-
 //MARK:- Delegates
 extension ProductsVC : ChangeFilter {
-
+    
     func changeFilterData(){
         self.viewModal.defaultTheVariables()
         self.viewModal.productSearchAPI()
-
+        
     }
 }
 

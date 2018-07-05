@@ -28,11 +28,7 @@ class ShopFilterVC: BaseController {
 
     //MARK:-
     //MARK: - Outlets
-    @IBOutlet weak var table: UITableView!{
-        didSet{
-            table.registerXIB(R.reuseIdentifier.shopFilterCell.identifier)
-        }
-    }
+    @IBOutlet weak var table: UITableView!
     @IBOutlet var filterBtnOutlets: [UIButton]!
     
     //MARK:-
@@ -47,22 +43,16 @@ class ShopFilterVC: BaseController {
         initialSetup()
     }
 
-}
 //MARK: -
 //MARK: - Custom Methods
-extension ShopFilterVC {
     
     func initialSetup() {
         self.viewModal.setingShopFilter()
         configureCollectionView()
         bindingButtons()
     }
-    
-    
-}
-
+//MARK: -
 //MARK: - IBAction
-extension ShopFilterVC {
     
     func bindingButtons() {
         bindBtn(value: .Cancel)
@@ -72,8 +62,7 @@ extension ShopFilterVC {
     
     func bindBtn(value : ShopFilterBtnActions){
         
-        filterBtnOutlets[value.rawValue].rx.tap.subscribe(onNext:{ _ in
-            
+         filterBtnOutlets[value.rawValue].rx.tap.asDriver().drive(onNext: {
             switch value{
                 
             case .Cancel:
@@ -92,11 +81,12 @@ extension ShopFilterVC {
                 
             }
         }).disposed(by: disposableBag)
+        
     }
     
-}
-//MARK: TableView DataSource
-extension ShopFilterVC  {
+//MARK: -
+//MARK:- TableView DataSource
+
     
     func configureCollectionView(){
         

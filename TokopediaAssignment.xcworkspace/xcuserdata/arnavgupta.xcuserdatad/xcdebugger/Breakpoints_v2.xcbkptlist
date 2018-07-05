@@ -19,60 +19,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TokopediaAssignment/Code/WebServices/ProductEndPoint.swift"
-            timestampString = "552067287.912523"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "format()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TokopediaAssignment.ProductEndPoint.format() -&gt; Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;"
-                  moduleName = "TokopediaAssignment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arnavgupta/Desktop/ProjectsToko/Megha-TokopediaAssignment/TokopediaAssignment/Code/WebServices/ProductEndPoint.swift"
-                  timestampString = "552081626.0767339"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "722">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TokopediaAssignment.ProductEndPoint.format() -&gt; Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;"
-                  moduleName = "TokopediaAssignment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arnavgupta/Desktop/ProjectsToko/Megha-TokopediaAssignment/TokopediaAssignment/Code/WebServices/ProductEndPoint.swift"
-                  timestampString = "552081626.086362"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "4712">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TokopediaAssignment/Code/Controller/FilterVC.swift"
-            timestampString = "552105058.123596"
+            timestampString = "552468978.513607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "bindBtn(value:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -84,171 +36,109 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TokopediaAssignment/Code/Controller/FilterVC.swift"
-            timestampString = "552105058.124759"
+            timestampString = "552468978.513674"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "setFilterValues()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TokopediaAssignment/Code/Controller/FilterVC.swift"
-            timestampString = "552105058.125657"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "setFilterValues()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TokopediaAssignment/Code/Controller/FilterVC.swift"
-            timestampString = "552105058.126436"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "changeShopFilterData(shopFilter:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TokopediaAssignment/Code/MVVM/ViewModal/FilterViewModel.swift"
-            timestampString = "552104858.990853"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "tapDeleteShopType(at:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TokopediaAssignment/Code/MVVM/ViewModal/FilterViewModel.swift"
-            timestampString = "552104858.991724"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TokopediaAssignment/Code/MVVM/ViewModal/FilterViewModel.swift"
-            timestampString = "552104858.9921581"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "tapDeleteShopType(at:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TokopediaAssignment/Code/MVVM/ViewModal/FilterViewModel.swift"
-            timestampString = "552104858.9926"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "tapDeleteShopType(at:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TokopediaAssignment/Code/Controller/FilterVC.swift"
-            timestampString = "552105058.127226"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "configureCollectionView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TokopediaAssignment/Code/Controller/FilterVC.swift"
-            timestampString = "552105058.127913"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "configureCollectionView()"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Int, TokopediaAssignment.ShopFilter, TokopediaAssignment.FilterShopTypeCell) -&gt; () in TokopediaAssignment.FilterVC.configureCollectionView() -&gt; ()"
+                  symbolName = "TokopediaAssignment.FilterVC.changeShopFilterData(shopFilter: Swift.Optional&lt;Swift.Array&lt;TokopediaAssignment.ShopFilter&gt;&gt;) -&gt; ()"
                   moduleName = "TokopediaAssignment"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arnavgupta/Desktop/ProjectsToko/Megha-TokopediaAssignment/TokopediaAssignment/Code/Controller/FilterVC.swift"
-                  timestampString = "552081626.192101"
+                  urlString = "file:///Users/arnavgupta/Desktop/tokopedia-miniAssignment-master/TokopediaAssignment/Code/Controller/FilterVC.swift"
+                  timestampString = "552466487.527889"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "99">
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "36">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Int, TokopediaAssignment.ShopFilter, TokopediaAssignment.FilterShopTypeCell) -&gt; () in TokopediaAssignment.FilterVC.configureCollectionView() -&gt; ()"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Array&lt;TokopediaAssignment.ShopFilter&gt; in TokopediaAssignment.FilterVC.changeShopFilterData(shopFilter: Swift.Optional&lt;Swift.Array&lt;TokopediaAssignment.ShopFilter&gt;&gt;) -&gt; ()"
                   moduleName = "TokopediaAssignment"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arnavgupta/Desktop/ProjectsToko/Megha-TokopediaAssignment/TokopediaAssignment/Code/Controller/FilterVC.swift"
-                  timestampString = "552081626.196489"
+                  urlString = "file:///Users/arnavgupta/Desktop/tokopedia-miniAssignment-master/TokopediaAssignment/Code/Controller/FilterVC.swift"
+                  timestampString = "552466487.530427"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "21">
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "62">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TokopediaAssignment/Code/Controller/FilterVC.swift"
+            timestampString = "552468978.513733"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "changeShopFilterData(shopFilter:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TokopediaAssignment.FilterVC.changeShopFilterData(shopFilter: Swift.Optional&lt;Swift.Array&lt;TokopediaAssignment.ShopFilter&gt;&gt;) -&gt; ()"
+                  moduleName = "TokopediaAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arnavgupta/Desktop/tokopedia-miniAssignment-master/TokopediaAssignment/Code/Controller/FilterVC.swift"
+                  timestampString = "552466488.20892"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "458">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 : @autoclosure () throws -&gt; Swift.Array&lt;TokopediaAssignment.ShopFilter&gt; in TokopediaAssignment.FilterVC.changeShopFilterData(shopFilter: Swift.Optional&lt;Swift.Array&lt;TokopediaAssignment.ShopFilter&gt;&gt;) -&gt; ()"
+                  moduleName = "TokopediaAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arnavgupta/Desktop/tokopedia-miniAssignment-master/TokopediaAssignment/Code/Controller/FilterVC.swift"
+                  timestampString = "552466488.211839"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "62">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TokopediaAssignment/Code/Controller/FilterVC.swift"
+            timestampString = "552468978.513788"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "bindBtn(value:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

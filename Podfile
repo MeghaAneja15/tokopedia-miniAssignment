@@ -16,5 +16,5 @@ target 'TokopediaAssignment' do
   pod 'SwiftMessages'
   pod 'SwiftyJSON'
   pod 'R.swift'
-  
+  pod 'RxAlamofire'
 end

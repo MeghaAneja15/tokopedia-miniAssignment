@@ -7,6 +7,8 @@ class CommonFunction: NSObject {
     
     
     static let sharedInstance = CommonFunction()
+    
+    
 }
 
 //MARK:- Show Loader
@@ -15,7 +17,7 @@ extension CommonFunction{
     
     func showLoader(){
         
-        (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController?.startAnimating(CGSize(width: 60,height: 60), message: "", type: .ballSpinFadeLoader, color: UIColor.blue, padding: 0, displayTimeThreshold: nil, minimumDisplayTime: nil)
+        (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController?.startAnimating(CGSize(width: 60,height: 60), message: "", type: .ballSpinFadeLoader, color: UIColor.green, padding: 0, displayTimeThreshold: nil, minimumDisplayTime: nil)
     }
     func hideLoader(){
         

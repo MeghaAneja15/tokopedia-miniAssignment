@@ -79,34 +79,19 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
   struct nib {
-    /// Nib `FilterShopTypeCell`.
-    static let filterShopTypeCell = _R.nib._FilterShopTypeCell()
-    /// Nib `ShopFilterCell`.
-    static let shopFilterCell = _R.nib._ShopFilterCell()
-    
-    /// `UINib(name: "FilterShopTypeCell", in: bundle)`
-    static func filterShopTypeCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.filterShopTypeCell)
-    }
-    
-    /// `UINib(name: "ShopFilterCell", in: bundle)`
-    static func shopFilterCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.shopFilterCell)
-    }
-    
     fileprivate init() {}
   }
   
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `FilterShopTypeCell`.
-    static let filterShopTypeCell: Rswift.ReuseIdentifier<TokopediaAssignment.FilterShopTypeCell> = Rswift.ReuseIdentifier(identifier: "FilterShopTypeCell")
+    static let filterShopTypeCell: Rswift.ReuseIdentifier<FilterShopTypeCell> = Rswift.ReuseIdentifier(identifier: "FilterShopTypeCell")
     /// Reuse identifier `ProductCell`.
     static let productCell: Rswift.ReuseIdentifier<ProductCell> = Rswift.ReuseIdentifier(identifier: "ProductCell")
     /// Reuse identifier `ShopFilterCell`.
-    static let shopFilterCell: Rswift.ReuseIdentifier<TokopediaAssignment.ShopFilterCell> = Rswift.ReuseIdentifier(identifier: "ShopFilterCell")
+    static let shopFilterCell: Rswift.ReuseIdentifier<ShopFilterCell> = Rswift.ReuseIdentifier(identifier: "ShopFilterCell")
     
     fileprivate init() {}
   }
@@ -157,51 +142,9 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     try storyboard.validate()
-    try nib.validate()
   }
   
-  struct nib: Rswift.Validatable {
-    static func validate() throws {
-      try _ShopFilterCell.validate()
-      try _FilterShopTypeCell.validate()
-    }
-    
-    struct _FilterShopTypeCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
-      typealias ReusableType = TokopediaAssignment.FilterShopTypeCell
-      
-      let bundle = R.hostingBundle
-      let identifier = "FilterShopTypeCell"
-      let name = "FilterShopTypeCell"
-      
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> TokopediaAssignment.FilterShopTypeCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TokopediaAssignment.FilterShopTypeCell
-      }
-      
-      static func validate() throws {
-        if UIKit.UIImage(named: "baseline_clear_black_24pt", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'baseline_clear_black_24pt' is used in nib 'FilterShopTypeCell', but couldn't be loaded.") }
-      }
-      
-      fileprivate init() {}
-    }
-    
-    struct _ShopFilterCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
-      typealias ReusableType = TokopediaAssignment.ShopFilterCell
-      
-      let bundle = R.hostingBundle
-      let identifier = "ShopFilterCell"
-      let name = "ShopFilterCell"
-      
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> TokopediaAssignment.ShopFilterCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TokopediaAssignment.ShopFilterCell
-      }
-      
-      static func validate() throws {
-        if UIKit.UIImage(named: "baseline_check_box_outline_blank_black_24pt", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'baseline_check_box_outline_blank_black_24pt' is used in nib 'ShopFilterCell', but couldn't be loaded.") }
-      }
-      
-      fileprivate init() {}
-    }
-    
+  struct nib {
     fileprivate init() {}
   }
   
@@ -242,8 +185,9 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "next") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'next' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "baseline_keyboard_arrow_left_black_24pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'baseline_keyboard_arrow_left_black_24pt' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "baseline_clear_black_24pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'baseline_clear_black_24pt' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "baseline_check_box_outline_blank_black_24pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'baseline_check_box_outline_blank_black_24pt' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "baseline_keyboard_arrow_left_black_24pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'baseline_keyboard_arrow_left_black_24pt' is used in storyboard 'Main', but couldn't be loaded.") }
         if _R.storyboard.main().productsVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'productsVC' could not be loaded from storyboard 'Main' as 'ProductsVC'.") }
         if _R.storyboard.main().shopFilterVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'shopFilterVC' could not be loaded from storyboard 'Main' as 'ShopFilterVC'.") }
         if _R.storyboard.main().filterVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'filterVC' could not be loaded from storyboard 'Main' as 'FilterVC'.") }

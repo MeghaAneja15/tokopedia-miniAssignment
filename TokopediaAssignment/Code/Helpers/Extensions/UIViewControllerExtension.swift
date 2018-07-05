@@ -38,15 +38,17 @@ extension UIViewController {
     
 }
 
-extension UITableView {
-    func registerXIB(_ nibName: String) {
-        self.register(UINib.init(nibName: nibName, bundle: nil), forCellReuseIdentifier: nibName)
-    }
+extension DispatchQueue {
+    
+    static func background(delay: Double = 0.0, background: (()->Void)? = nil, completion: (() -> Void)? = nil) {
+        DispatchQueue.global(qos: .background).async {
+            background?()
+            if let completion = completion {
+                DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: {
+                    completion()
+                })
+            }
+        }
+     }
+    
 }
-
-extension UICollectionView {
-    func registerXIB(_ nibName: String) {
-        self.register(UINib.init(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: nibName)
-    }
-}
-

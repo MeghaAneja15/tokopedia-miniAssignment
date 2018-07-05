@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import RxSwift
 
 
 struct Filter : Codable {
@@ -19,6 +20,7 @@ struct Filter : Codable {
     var official : Bool?
     var fShop : Int?
     var searchString : String?
+    var shopFilter : [ShopFilter]
 
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252136CB20EDF138006B3239 /* ToastsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252136CA20EDF138006B3239 /* ToastsManager.swift */; };
 		25FA7D4920E6035D0025276B /* ProductEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA7D4820E6035D0025276B /* ProductEndPoint.swift */; };
 		25FA7D4B20E60FEB0025276B /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA7D4A20E60FEB0025276B /* FilterVC.swift */; };
 		25FA7D4D20E610140025276B /* ShopFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA7D4C20E610140025276B /* ShopFilterVC.swift */; };
@@ -16,9 +17,7 @@
 		25FA7D6C20E622A60025276B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA7D6B20E622A60025276B /* R.generated.swift */; };
 		25FA7D6E20E623D10025276B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA7D6D20E623D10025276B /* UIViewControllerExtension.swift */; };
 		25FA7D7120E628BC0025276B /* FilterShopTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA7D6F20E628BC0025276B /* FilterShopTypeCell.swift */; };
-		25FA7D7220E628BC0025276B /* FilterShopTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FA7D7020E628BC0025276B /* FilterShopTypeCell.xib */; };
 		25FA7D7520E6296D0025276B /* ShopFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA7D7320E6296D0025276B /* ShopFilterCell.swift */; };
-		25FA7D7620E6296D0025276B /* ShopFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FA7D7420E6296D0025276B /* ShopFilterCell.xib */; };
 		25FA7D7920E62E7C0025276B /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA7D7820E62E7C0025276B /* UserSingleton.swift */; };
 		403F1D4E3F1A46D7562C1EB7 /* Pods_TokopediaAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE01AFE6D6C1BA19E457BD2A /* Pods_TokopediaAssignment.framework */; };
 		A12F079C20E384F3006566F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F079B20E384F3006566F1 /* AppDelegate.swift */; };
@@ -39,7 +38,6 @@
 		A17061DE20E3B1DF0086F901 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17061DD20E3B1DF0086F901 /* UIViewExtensions.swift */; };
 		A195F7D220E38EBE005644F4 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195F7D120E38EBE005644F4 /* ProductsVC.swift */; };
 		A195F7D520E3901F005644F4 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195F7D420E3901F005644F4 /* ProductCell.swift */; };
-		A195F7DB20E39155005644F4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195F7D720E39155005644F4 /* HTTPClient.swift */; };
 		A195F7DC20E39155005644F4 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195F7D820E39155005644F4 /* APIConstants.swift */; };
 		A195F7DD20E39155005644F4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195F7D920E39155005644F4 /* APIManager.swift */; };
 		A195F7E020E39540005644F4 /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195F7DF20E39540005644F4 /* CommonFunction.swift */; };
@@ -49,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		1A970067DC748FD03CD6ADDF /* Pods-TokopediaAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokopediaAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TokopediaAssignment/Pods-TokopediaAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		252136CA20EDF138006B3239 /* ToastsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastsManager.swift; sourceTree = "<group>"; };
 		25FA7D4820E6035D0025276B /* ProductEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEndPoint.swift; sourceTree = "<group>"; };
 		25FA7D4A20E60FEB0025276B /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
 		25FA7D4C20E610140025276B /* ShopFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopFilterVC.swift; sourceTree = "<group>"; };
@@ -58,9 +57,7 @@
 		25FA7D6B20E622A60025276B /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		25FA7D6D20E623D10025276B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		25FA7D6F20E628BC0025276B /* FilterShopTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterShopTypeCell.swift; sourceTree = "<group>"; };
-		25FA7D7020E628BC0025276B /* FilterShopTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterShopTypeCell.xib; sourceTree = "<group>"; };
 		25FA7D7320E6296D0025276B /* ShopFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopFilterCell.swift; sourceTree = "<group>"; };
-		25FA7D7420E6296D0025276B /* ShopFilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopFilterCell.xib; sourceTree = "<group>"; };
 		25FA7D7820E62E7C0025276B /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		A12F079820E384F3006566F1 /* TokopediaAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokopediaAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12F079B20E384F3006566F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +79,6 @@
 		A17061DD20E3B1DF0086F901 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		A195F7D120E38EBE005644F4 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		A195F7D420E3901F005644F4 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
-		A195F7D720E39155005644F4 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		A195F7D820E39155005644F4 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		A195F7D920E39155005644F4 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		A195F7DF20E39540005644F4 /* CommonFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
@@ -116,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				25FA7D7320E6296D0025276B /* ShopFilterCell.swift */,
-				25FA7D7420E6296D0025276B /* ShopFilterCell.xib */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -126,7 +121,6 @@
 			children = (
 				A195F7D420E3901F005644F4 /* ProductCell.swift */,
 				25FA7D6F20E628BC0025276B /* FilterShopTypeCell.swift */,
-				25FA7D7020E628BC0025276B /* FilterShopTypeCell.xib */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -234,7 +228,6 @@
 				A195F7D820E39155005644F4 /* APIConstants.swift */,
 				A195F7D920E39155005644F4 /* APIManager.swift */,
 				A195F7E120E395F1005644F4 /* APIRoutes.swift */,
-				A195F7D720E39155005644F4 /* HTTPClient.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -297,7 +290,6 @@
 		A12F07C620E387A2006566F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A12F07C820E38983006566F1 /* CustomViews */,
 				A12F07C720E3897A006566F1 /* InterfaceBuilder */,
 			);
 			path = View;
@@ -309,13 +301,6 @@
 				A12F079F20E384F4006566F1 /* Main.storyboard */,
 			);
 			path = InterfaceBuilder;
-			sourceTree = "<group>";
-		};
-		A12F07C820E38983006566F1 /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		A195F7D320E39007005644F4 /* CellClasses */ = {
@@ -332,6 +317,7 @@
 			children = (
 				A195F7E320E39638005644F4 /* UnWrap.swift */,
 				A195F7DF20E39540005644F4 /* CommonFunction.swift */,
+				252136CA20EDF138006B3239 /* ToastsManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -399,10 +385,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12F07A620E384F4006566F1 /* LaunchScreen.storyboard in Resources */,
-				25FA7D7220E628BC0025276B /* FilterShopTypeCell.xib in Resources */,
 				A12F07A320E384F4006566F1 /* Assets.xcassets in Resources */,
 				A12F07A120E384F4006566F1 /* Main.storyboard in Resources */,
-				25FA7D7620E6296D0025276B /* ShopFilterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +437,7 @@
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
@@ -466,6 +451,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
@@ -491,7 +477,6 @@
 				25FA7D5920E6186F0025276B /* HeightFrames.swift in Sources */,
 				A12F07C520E386BF006566F1 /* WholesalePrice.swift in Sources */,
 				A195F7DC20E39155005644F4 /* APIConstants.swift in Sources */,
-				A195F7DB20E39155005644F4 /* HTTPClient.swift in Sources */,
 				25FA7D7120E628BC0025276B /* FilterShopTypeCell.swift in Sources */,
 				25FA7D7520E6296D0025276B /* ShopFilterCell.swift in Sources */,
 				A12F07C120E386BF006566F1 /* ProductDetail.swift in Sources */,
@@ -503,6 +488,7 @@
 				A12F07C220E386BF006566F1 /* ShopFilter.swift in Sources */,
 				25FA7D6C20E622A60025276B /* R.generated.swift in Sources */,
 				25FA7D6E20E623D10025276B /* UIViewControllerExtension.swift in Sources */,
+				252136CB20EDF138006B3239 /* ToastsManager.swift in Sources */,
 				A17061D620E3A2C50086F901 /* BaseController.swift in Sources */,
 				A17061D820E3A3A90086F901 /* ProductViewModal.swift in Sources */,
 				25FA7D4D20E610140025276B /* ShopFilterVC.swift in Sources */,

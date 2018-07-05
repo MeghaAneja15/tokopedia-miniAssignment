@@ -29,7 +29,7 @@ class UserSingleton:NSObject{
                 let filter = try? JSONDecoder().decode(Filter.self, from: filterData) {
                 return (filter)
             }else {
-            return Filter(maxPrice:100000.0,minPrice:10000.0,lowerBound:10000.0,upperBound:100000.0,wholeSale:false,official:true,fShop:2,searchString:ConstantStrings.searchString.rawValue)
+            return Filter(maxPrice:100000.0,minPrice:10000.0,lowerBound:10000.0,upperBound:100000.0,wholeSale:false,official:true,fShop:2,searchString:ConstantStrings.searchString.rawValue, shopFilter: [ShopFilter(name: ConstantStrings.goldMerchant.rawValue, id: ConstantStrings.idGold.rawValue), ShopFilter(name: ConstantStrings.officialStore.rawValue, id: ConstantStrings.idOfficial.rawValue)])
         }
         }
     }

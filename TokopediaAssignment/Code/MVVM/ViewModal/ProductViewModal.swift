@@ -14,21 +14,21 @@ import RxCocoa
 class ProductViewModal{
     
     let disposableBag = DisposeBag()
-    let arrayProductDetail = Variable<[ProductDetail]>([])
+    let arrayProductDetail = BehaviorRelay<[ProductDetail]>(value: [])
     var start = 0
     var rows = 10
     var filterModel : Filter?
     var totalItems = 0
     
     
-    ///Setting to default values
+    //Setting to default values
     func defaultTheVariables() {
         
         start = 0
         rows = 10
         totalItems = 0
         
-        self.arrayProductDetail.value.removeAll()
+        self.arrayProductDetail.accept([])
     }
 }
 
@@ -36,34 +36,40 @@ class ProductViewModal{
 ///WebService Hit
 extension ProductViewModal{
     
+    
     func productSearchAPI(){
         
-        APIManager.shared.request(with: ProductEndPoint.getProducts(start: start, rows: rows), completion: { (response) in
-            
-            switch response {
+        APIManager.shared.request(with: ProductEndPoint.getProducts(start: start, rows: rows), isLoaderNeeded: self.arrayProductDetail.value.count == 0).subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .subscribe(onNext:{ respone in
                 
-            case .success(let responseValue ):
-                guard let responses = responseValue as? BaseModel else {return}
-                print(responses)
-                self.totalItems = /(responses.header?.total_data)
-                self.totalItems = /(responses.header?.total_data)
-                self.arrayProductDetail.value += responses.data ?? []
+                guard let response = respone as? BaseModel else{return}
+                let statusCode = StatusCode(rawValue: /response.statusCode?.error_code) ?? .failure
+                switch statusCode{
+                    
+                case .success :
+                    
+                    self.totalItems = /(response.header?.total_data)
+                    self.totalItems = /(response.header?.total_data)
+                    self.arrayProductDetail.accept(self.arrayProductDetail.value + (response.data ?? []) )
+                    
+                case .failure:break
+                UIApplication.shared.keyWindow?.rootViewController?.makeToast(text:  ConstantStrings.somethingWentWrong.rawValue, type: .error)
+                    
+                }
                 
-            case.failure(_):break
-                //self.makeToast(text: str, type: .error)
-            }
-            
-        }, loader: arrayProductDetail.value.count == 0)
+            }).disposed(by: disposableBag)
+        
     }
     
     ///Pagination
     func pagination(row : Int) {
         
-        if row == arrayProductDetail.value.count - 1 {
+        if row == arrayProductDetail.value.count - 4 {
             if totalItems > arrayProductDetail.value.count {
                 start = rows
                 rows += 10
                 self.productSearchAPI()
+                
             }
         }
     }

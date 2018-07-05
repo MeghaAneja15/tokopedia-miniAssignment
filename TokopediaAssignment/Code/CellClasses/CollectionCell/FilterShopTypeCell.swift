@@ -32,10 +32,10 @@ class FilterShopTypeCell : UICollectionViewCell {
         super.awakeFromNib()
         
         // initial setup
-        self.viewShopType.layer.masksToBounds = false
-        self.btnRemoveShopType.layer.masksToBounds = true
+//        self.viewShopType.layer.masksToBounds = false
+//        self.btnRemoveShopType.layer.masksToBounds = true
         
-        constraintBtnRemoveWidth.constant = self.viewShopType.frame.size.height - 16.0
+        constraintBtnRemoveWidth.constant = self.viewShopType.frame.size.height
     }
     
     var shopFilter : ShopFilter? {

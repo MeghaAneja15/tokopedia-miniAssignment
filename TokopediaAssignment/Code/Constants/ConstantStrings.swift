@@ -16,5 +16,6 @@ enum ConstantStrings : String {
     case officialStore = "Official Store"
     case idGold = "1"
     case idOfficial = "2"
+    case somethingWentWrong = "Something went wrong"
     
 }

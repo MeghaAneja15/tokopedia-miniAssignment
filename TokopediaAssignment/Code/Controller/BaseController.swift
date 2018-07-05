@@ -23,15 +23,11 @@ class BaseController: UIViewController {
         
     }
     
-    func collectionViewFlowLayout(minSpacing : CGFloat ,minItemSpacing: CGFloat,scrollDirection:UICollectionViewScrollDirection,height:CGFloat?,width:CGFloat?) -> UICollectionViewFlowLayout{
+    
+    func collectionViewFlowLayout(height:CGFloat?,width:CGFloat?) -> UICollectionViewFlowLayout{
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = minSpacing
-        layout.minimumInteritemSpacing = minItemSpacing
-        layout.scrollDirection = scrollDirection
         layout.itemSize.height = /height
         layout.itemSize.width = /width
-        
-        
         return layout
         
     }
